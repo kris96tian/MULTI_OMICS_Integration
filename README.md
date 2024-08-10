@@ -1,4 +1,34 @@
-the goal to study how metabolic changes influence signaling pathways. Similar preprocessing steps were applied, with a focus on retaining nodes and interactions relevant to the metabolic data. But here I faced most technical challenges, due to the program terminatin.
+# 
+
+# MULTI-OMICS INTEGRATION APPROACH TO UNDERSTAND GENE-METABOLITE INTERACTIONS IN HFPEF
+
+## Introduction
+
+Heart failure with preserved ejection fraction (HFpEF) is increasingly  
+recognized as a significant public health issue, poised to become the  
+predominant form of heart failure globally.  
+The disease's underlying molecular mechanisms remain elusive, and current  
+therapeutic options are limited.  
+A systems biology approach, leveraging high-throughput sequencing  
+technologies and integrating multi-omics datasets, offers a promising avenue  
+for elucidating these mechanisms.  
+By examining the interplay between genes, metabolites, and signaling  
+pathways, this approach aims to uncover novel biomarkers and therapeutic  
+targets for HFpEF.
+
+## Methodology
+
+The project employs an integrative analysis of transcriptomic, metabolomic, and phosphoproteomic datasets. The transcriptomic data is preprocessed as a matrix of log2 fold changes, while metabolomic data is prepared for COSMOS input analysis. Phosphoproteomic data is presented as a matrix of negative log10 adjusted pvalues.
+
+## 
+
+## 
+
+# Stattifically signigicant
+
+### cosmosR
+
+Analysis COSMOS was used for both signaling-to-metabolism and metabolism-tosignaling analyses. This involved preprocessing steps lie network compression and filtering to manage missing data points and partial matches between reactions. 1\. Signaling to Metabolism:(test\_for) The signaling-to-metabolism analysis aimed to connect signaling events to metabolic outcomes. The preprocessing step involved removing unexpressed nodes and pruning the network to retain only relevant interactions. 2.Metabolism to Signaling: (test\_back) The metabolism-to-signaling analysis hasthe goal to study how metabolic changes influence signaling pathways. Similar preprocessing steps were applied, with a focus on retaining nodes and interactions relevant to the metabolic data. But here I faced most technical challenges, due to the program terminatin.
 
 Pathways such as oxidative **phosphorylation**, **glycolysis**, and **fatty acid metabolism** are interconnected and interact with other pathways involved in inflammation, **hypoxia**, and **apoptosis**.   
 This could suggest that metabolic dysregulation, including impaired energy productionand altered substrate utilization, may contribute to the development and progression of HFpEF. The network highlights the role of growth factor signaling pathways in HFpEF. Pathways such as PI3K-Akt-mTOR signaling, E2F targets, and Notch signaling are interconnected and interact with other pathways involved in cell cycle regulation, apoptosis, and inflammation. This could suggest that dysregulation of growth factor signaling may contribute to the pathogenesis of HFpEF by promoting maladaptive remodeling, hypertrophy, and fibrosis. Overall, the network reveals the interplay between various biological processes, including inflammation,immune response,metabolism, and growth factor signaling, and highlights the central role of the p53 pathway in HFpEF pathogenesis
