@@ -1,10 +1,12 @@
-# 
-## Web-App: https://tf3dgraphs-d7crzcu7hrra9p6yw4jgu9.streamlit.app/
+# MULTI-OMICS INTEGRATION APPROACH TO UNDERSTAND GENE-METABOLITE INTERACTIONS IN HFPEF
+
 #
+## Web-App: https://tf3dgraphs-d7crzcu7hrra9p6yw4jgu9.streamlit.app/
+
 <img src="blob:chrome-untrusted://media-app/d432794d-bed2-4207-899b-b81084cb7db8" alt=""/>![image](https://github.com/user-attachments/assets/147edd4e-3d7d-4b14-8a3d-39bafcd226ee)
 #
 
-# MULTI-OMICS INTEGRATION APPROACH TO UNDERSTAND GENE-METABOLITE INTERACTIONS IN HFPEF
+
 
 ## Introduction
 
