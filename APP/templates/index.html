@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D TF-Network Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Settings</h2>
+        <div class="control-group">
+            <label for="tf-select">Select a transcription factor:</label>
+            <select id="tf-select">
+                {% for tf in tfs %}
+                <option value="{{ tf }}">{{ tf }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="node-size">Node size:</label>
+            <input type="range" id="node-size" min="5" max="15" value="8">
+        </div>
+
+        <div class="control-group">
+            <label for="color-selected">Color for selected TF:</label>
+            <input type="color" id="color-selected" value="#FF6347">
+        </div>
+
+        <div class="control-group">
+            <label for="color-neighbors">Color for neighboring TFs:</label>
+            <input type="color" id="color-neighbors" value="#87CEFA">
+        </div>
+
+        <button id="generate-btn">Generate Subgraph</button>
+    </div>
+
+    <div class="main-content">
+        <h1>3D TF-Network Visualization</h1>
+        <div id="graph-container"></div>
+        <div id="distances-container">
+            <h3></h3>
+            <div id="distances-list"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
